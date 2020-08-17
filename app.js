@@ -1,8 +1,7 @@
 let arrayArtist=[];
 let arrayTitle=[];
 // search Button
-document.getElementById("searchButton").addEventListener("click",function (){
-    
+document.getElementById("searchButton").addEventListener("click",function (){    
 
     const songList=document.getElementById("songList");
     songList.style.display="block";
@@ -73,4 +72,11 @@ document.getElementById("searchButton").addEventListener("click",function (){
   
 })
 
+removePage=  function (){
+    const songLyrics=document.getElementById("songLyrics");
+    songLyrics.style.display="none";
 
+    const songList=document.getElementById("songList");
+    songList.style.display="block";
+    // console.log("click");
+}
